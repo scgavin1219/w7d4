@@ -1,23 +1,34 @@
 @use '../variables' as *;
 
 .main-nav {
-  
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
 }
 
 .left-nav > ul,
 .right-nav > ul {
-  
+  display: flex;
+  align-items: center;
+  margin: 10px;
 }
 
 .left-nav {
 
   > ul {
     > li {
+      margin: 10px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 18px;
+      text-transform: uppercase;
       
     }
   }
 
   span {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 18px;
+      text-transform: uppercase;
     
   }
 }
@@ -25,22 +36,27 @@
 .right-nav  {
   > ul {
     > li {
-      
+          margin: 10px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-size: 18px;
+          text-transform: uppercase;
     }
 
     > li:last-of-type {
-      
+      font-size: 25px;
     }
   }
   
   i {
-    
+    font-size: 25px;
   }
 }
 
 .left-nav > ul > li:hover,
 .right-nav > ul > li:last-of-type:hover {
-  
+  background-color: $light-gray;
 }
+
+
 
     
